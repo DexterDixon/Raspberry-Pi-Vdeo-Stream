@@ -3,7 +3,7 @@
 import cv2
 import numpy as np
 
-cv2.namedWindow("Vission")
+cv2.namedWindow("Vision")
 
 camera1 = cv2.VideoCapture(0)
 camera2 = cv2.VideoCapture(1)
@@ -22,11 +22,11 @@ while(True):
     final = cv2.hconcat([frame1, frame2])
 
     #Display the resulting frame
-    cv2.imshow('Vission',final)
+    cv2.imshow('Vision',final)
 
     key = cv2.waitKey(20)
     if key == 27: # exit on ESC
         break
 
-cv2.destroyWindow("Vission")
+cv2.destroyWindow("Vision")
 vc.release()
