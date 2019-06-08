@@ -3,7 +3,7 @@
 import cv2
 import numpy as np
 
-cv2.namedWindow("Vission")
+cv2.namedWindow("Vision")
 
 camera1 = cv2.VideoCapture(0)
 
@@ -17,11 +17,11 @@ while(True):
 
 
     #Display the resulting frame
-    cv2.imshow('Vission',frame)
+    cv2.imshow('Vision',frame)
 
     key = cv2.waitKey(20)
     if key == 27: # exit on ESC
         break
 
-cv2.destroyWindow("Vission")
+cv2.destroyWindow("Vision")
 vc.release()
